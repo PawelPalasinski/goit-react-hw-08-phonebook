@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,KAAK,EAAE,oBAAoB;EAC3B,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,UAAU;EAC5B,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "NoContactsMessage.module.scss"
+    ],
+    "names": [],
+    "file": "NoContactsMessage.module.css"
+}

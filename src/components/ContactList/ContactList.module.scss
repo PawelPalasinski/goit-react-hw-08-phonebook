@@ -1,0 +1,49 @@
+.contacts {
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 20px;
+  max-width: 350px;
+  padding: 10px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & h2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  & ul {
+    list-style: none;
+    margin: 5px auto;
+    padding: 0;
+    & li {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & p {
+        line-height: 0;
+        & span {
+          font-weight: 700;
+        }
+      }
+      & button {
+        border: 1px solid grey;
+        background-color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        line-height: 0;
+        padding: 0;
+        color: tomato;
+        font-weight: 800;
+        &:hover {
+          background-color: grey;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.filter {
+  margin: 5px 0;
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 30px;
+  padding-left: 10px;
+  &:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+}
