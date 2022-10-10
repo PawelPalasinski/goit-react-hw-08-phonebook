@@ -8,8 +8,10 @@ export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    const form = e.currentTarget.form;
-    const { name, email, password } = form.elements;
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
 
     dispatch(
       register({
