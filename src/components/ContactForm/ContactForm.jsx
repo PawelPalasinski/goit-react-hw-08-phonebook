@@ -1,13 +1,14 @@
-import {
-  useGetContactsQuery,
-  useAddContactMutation,
-} from '../../features/api/apiSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectAllContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
+import toast from 'react-hot-toast';
+
 import { nanoid } from 'nanoid';
 import styles from './ContactForm.module.css';
 
 const ContactForm = () => {
-  const { data: contacts = [] } = useGetContactsQuery();
-  const [addContact] = useAddContactMutation();
+  const dispatch = useDispatch();
+  const contacts = useSelector(selectAllContacts);
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -17,12 +18,14 @@ const ContactForm = () => {
 
     if (contacts.find(cont => cont.name === name)) {
       alert(`${name} is already your friend...`);
+      toast.error(`${name} is already your friend...`);
     } else {
-      addContact({
+      dispatch(addContact({
         id: nanoid(),
         name,
         phone,
-      });
+      }));
+      toast.success(`${name} is now on your Friends List`);
       form.reset();
     }
   };
