@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/tasks/operations';
+import { deleteContact } from 'redux/contacts/operations';
 
 // import { useSelector } from 'react-redux';
 // import {
@@ -8,7 +8,7 @@ import { deleteContact } from 'redux/tasks/operations';
 // } from '../../features/api/apiSlice';
 import styles from './ContactList.module.css';
 
-const ContactList = ({ children }) => {
+const ContactList = ({ id, name, number, children }) => {
   // const filtersContacts = (contacts, filter) =>
   //   contacts.filter(contact =>
   //     contact.name.toLowerCase().includes(filter.toLowerCase())
@@ -21,8 +21,6 @@ const ContactList = ({ children }) => {
   // const contactsList = filtersContacts(contacts, filter);
 
   const dispatch = useDispatch();
-
-  const handleDelete = () => dispatch(deleteContact(id));
 
   return (
     <div className={styles.contacts}>
@@ -38,7 +36,7 @@ const ContactList = ({ children }) => {
           </p>
           <button
             type="button"
-            className={btn}
+            className={styles.btn}
             onClick={() => {
               dispatch(deleteContact(id));
             }}

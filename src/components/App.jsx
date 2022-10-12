@@ -24,7 +24,7 @@ const RegisterPage = lazy(() => import('../pages/Register/Register'));
 const LoginPage = lazy(() => import('../pages/Login/Login'));
 const ContactsPage = lazy(() => import('../pages/Contacts/Contacts'));
 
-export const App = () => {
+const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
 
@@ -63,3 +63,5 @@ export const App = () => {
     </Routes>
   );
 };
+
+export default App;
