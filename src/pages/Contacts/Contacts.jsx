@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import PhoneBook from '../../components/Phonebook/Phonebook';
 import ContactsList from '../../components/ContactList/ContactList';
 import Filter from '../../components/Filter/Filter';
-// import { Section } from '../../components/section/Section';
 import { selectLoading } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
 // import styles from './Contacts.module.css';

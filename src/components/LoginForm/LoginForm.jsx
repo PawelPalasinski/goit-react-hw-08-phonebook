@@ -7,18 +7,15 @@ const LoginForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    const form = e.currentTarget.form;
-    const { email, password } = form.elements;
-
-    dispatch(
-      logIn({
-        email: email.value,
-        password: password.value,
-      })
-    );
-
-    form.reset();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    if ((email && password) === '') {
+      return
+    } else {
+      dispatch(logIn({ email, password }));
+      form.reset();
+    }
   };
 
     return (

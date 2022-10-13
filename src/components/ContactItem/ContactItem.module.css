@@ -1,0 +1,41 @@
+.contactItem {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactItem p {
+  line-height: 0;
+}
+
+.contactItem p span {
+  font-weight: 700;
+}
+
+.contactItem button {
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  padding: 0;
+  color: tomato;
+  font-weight: 800;
+}
+
+.contactItem button:hover {
+  background-color: grey;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=ContactItem.module.css.map */

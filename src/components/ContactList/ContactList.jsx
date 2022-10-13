@@ -1,51 +1,36 @@
-import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/contacts/operations';
+import ContactItem from '../ContactItem/ContactItem';
+import NoContactsMessage from '../NoContactsMessage/NoContactsMessage';
 
-// import { useSelector } from 'react-redux';
-// import {
-//   useGetContactsQuery,
-//   useDeleteContactMutation,
-// } from '../../features/api/apiSlice';
+import { useSelector } from 'react-redux';
+import {
+  selectAllContacts,
+  selectLoading,
+} from '../../redux/contacts/selectors';
+
 import styles from './ContactList.module.css';
 
-const ContactList = ({ id, name, number, children }) => {
-  // const filtersContacts = (contacts, filter) =>
-  //   contacts.filter(contact =>
-  //     contact.name.toLowerCase().includes(filter.toLowerCase())
-  //   );
+const ContactList = () => {
+  const contacts = useSelector(selectAllContacts);
+  const isLoading = useSelector(selectLoading);
 
-  // const filter = useSelector(state => state.filter);
-
-  // const { data: contacts = [] } = useGetContactsQuery();
-  // const [deleteContact] = useDeleteContactMutation();
-  // const contactsList = filtersContacts(contacts, filter);
-
-  const dispatch = useDispatch();
-
+  const filter = useSelector(state => state.filter);
+  const viewContacts = contacts
+    .filter(cont => cont.name.toLowerCase().includes(filter))
+    .sort((first, second) => first.name.localeCompare(second.name));
   return (
-    <div className={styles.contacts}>
-      {children}
-      <h2>Contacts</h2>
-      <ul>
-
-        <li>
-          <p>
-            <span>
-              {name}: {number}
-            </span>
-          </p>
-          <button
-            type="button"
-            className={styles.btn}
-            onClick={() => {
-              dispatch(deleteContact(id));
-            }}
-          >
-            ⛌
-          </button>
-        </li>
-
-      </ul>
+    <div>
+      {isLoading && <p>Loading...</p>}
+      {contacts?.length > 0 ? (
+        <div className={styles.contacts}>
+          <ul>
+            {viewContacts.map(({ id, name, number }) => (
+              <ContactItem key={id} id={id} name={name} number={number} />
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <NoContactsMessage />
+      )}
     </div>
   );
 };

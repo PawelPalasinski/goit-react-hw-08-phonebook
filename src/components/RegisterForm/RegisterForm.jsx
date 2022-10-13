@@ -13,13 +13,7 @@ export const RegisterForm = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    dispatch(
-      register({
-        name: name.value,
-        email: email.value,
-        password: password.value,
-      })
-    );
+dispatch(register({ name, email, password }));
 
     form.reset();
   };
