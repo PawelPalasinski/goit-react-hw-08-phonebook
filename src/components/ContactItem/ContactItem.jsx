@@ -1,4 +1,3 @@
-
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 

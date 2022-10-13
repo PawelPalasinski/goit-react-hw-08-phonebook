@@ -14,7 +14,7 @@ const ContactForm = () => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
-    const phone = form.phone.value;
+    const number = form.number.value;
 
     if (contacts.find(cont => cont.name === name)) {
       alert(`${name} is already your friend...`);
@@ -23,7 +23,7 @@ const ContactForm = () => {
       dispatch(addContact({
         id: nanoid(),
         name,
-        phone,
+        number,
       }));
       toast.success(`${name} is now on your Friends List`);
       form.reset();
@@ -34,7 +34,7 @@ const ContactForm = () => {
     <div className={styles.phonebook}>
       <svg
         className={styles.phonebookSvg}
-        id="phone"
+        id="name"
         width="60px"
         height="60px"
         viewBox="0 0 299.995 299.995"
@@ -76,7 +76,7 @@ const ContactForm = () => {
         <label htmlFor="number">Number</label>
         <input
           type="tel"
-          name="phone"
+          name="number"
           placeholder="Enter phone number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
