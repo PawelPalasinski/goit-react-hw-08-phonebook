@@ -13,6 +13,6 @@
 
 ### RTK Query
 
-## 🌐 [GitHub Pages](https://pawelpalasinski.github.io/goit-react-hw-08-phonebook/)
+## 🌐 [Page](https://pp-phonebook.netlify.app/)
 
 </div>
