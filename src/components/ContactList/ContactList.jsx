@@ -1,4 +1,5 @@
 import ContactItem from '../ContactItem/ContactItem';
+import Filter from '../Filter/Filter';
 import NoContactsMessage from '../NoContactsMessage/NoContactsMessage';
 
 import { useSelector } from 'react-redux';
@@ -8,7 +9,7 @@ import {
 } from '../../redux/contacts/selectors';
 
 import styles from './ContactList.module.css';
-import Filter from 'components/Filter/Filter';
+
 
 const ContactList = () => {
   const contacts = useSelector(selectAllContacts);
