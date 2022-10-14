@@ -19,20 +19,21 @@ dispatch(register({ name, email, password }));
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
-      <label className={styles.label}>
-        Username
+    <div className={styles.registerForm}>
+      <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
+        <label className={styles.label} htmlFor="name">
+          Username
+        </label>
         <input type="text" name="name" />
-      </label>
-      <label className={styles.label}>
-        Email
+
+        <label className={styles.label} htmlFor="email">
+          Email
+        </label>
         <input type="email" name="email" />
-      </label>
-      <label className={styles.label}>
-        Password
+        <label className={styles.label} htmlFor='password'>Password</label>
         <input type="password" name="password" />
-      </label>
-      <button type="submit">Register</button>
-    </form>
+        <button type="submit">Register</button>
+      </form>
+    </div>
   );
 };

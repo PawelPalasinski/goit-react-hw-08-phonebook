@@ -1,8 +1,14 @@
-.form {
-  width: 320px;
+.registerForm {
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 350px;
+  padding: 10px;
+  background-color: whitesmoke;
 }
 
-.form .label {
+.registerForm form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,6 +16,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registerForm form .label {
+  font-weight: 700;
+}
+
+.registerForm form input {
+  margin: 5px 0;
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.registerForm form input:hover {
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.registerForm form button {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.registerForm form button:hover {
+  background-color: grey;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=RegisterForm.module.css.map */

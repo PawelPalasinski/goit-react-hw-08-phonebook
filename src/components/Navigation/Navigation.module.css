@@ -1,11 +1,18 @@
 .link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px;
-    font-weight: 700;
-    color: #2a363b;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #2a363b;
+}
+
+.link svg {
+  fill: #000;
+  width: 18px;
+  height: 18px;
 }
 
 .link.active {
-    color: #e84a5f;
+  color: #e84a5f;
 }
+/*# sourceMappingURL=Navigation.module.css.map */

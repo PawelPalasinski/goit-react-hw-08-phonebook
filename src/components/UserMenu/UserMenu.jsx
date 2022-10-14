@@ -12,8 +12,7 @@ export const UserMenu = () => {
       <p className={styles.username}>{user.name}</p>
       <button type="button" onClick={() => dispatch(logOut())}>
         <svg
-          version="1.1"
-          id="Capa_1"
+          id="LogOff"
           x="0px"
           y="0px"
           viewBox="0 0 471.2 471.2"
@@ -33,7 +32,6 @@ export const UserMenu = () => {
             </g>
           </g>
         </svg>
-        Logout
       </button>
     </div>
   );
