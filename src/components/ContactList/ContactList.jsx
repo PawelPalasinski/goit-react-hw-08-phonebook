@@ -1,3 +1,4 @@
+import Spinner from '../Loader/Loader';
 import ContactItem from '../ContactItem/ContactItem';
 import Filter from '../Filter/Filter';
 import NoContactsMessage from '../NoContactsMessage/NoContactsMessage';
@@ -10,7 +11,6 @@ import {
 
 import styles from './ContactList.module.css';
 
-
 const ContactList = () => {
   const contacts = useSelector(selectAllContacts);
   const isLoading = useSelector(selectLoading);
@@ -19,10 +19,10 @@ const ContactList = () => {
   const viewContacts = contacts
     .filter(cont => cont.name.toLowerCase().includes(filter))
     .sort((first, second) => first.name.localeCompare(second.name));
-  
+
   return (
     <div>
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <Spinner />}
 
       {contacts?.length > 0 ? (
         <div className={styles.contacts}>

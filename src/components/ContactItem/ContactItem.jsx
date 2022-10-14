@@ -9,9 +9,8 @@ const ContactItem = ({ id, name, number }) => {
   return (
     <li className={styles.contactItem}>
       <p>
-        <span>
-          {name}: {number}
-        </span>
+        <span>{name}: </span>
+        {number}
       </p>
       <button
         type="button"

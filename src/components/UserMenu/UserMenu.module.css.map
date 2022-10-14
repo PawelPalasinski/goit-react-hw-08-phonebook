@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,IAAI;CACZ;;AAED,AAAA,SAAS,CAAC;EACN,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "UserMenu.module.scss"
+    ],
+    "names": [],
+    "file": "UserMenu.module.css"
+}

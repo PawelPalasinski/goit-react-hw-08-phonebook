@@ -1,9 +1,14 @@
-.wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.userMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
 }
 
 .username {
-    font-weight: 700;
+  font-weight: 700;
 }
+/*# sourceMappingURL=UserMenu.module.css.map */

@@ -17,7 +17,6 @@ const ContactForm = () => {
     const number = form.number.value;
 
     if (contacts.find(cont => cont.name === name)) {
-      alert(`${name} is already your friend...`);
       toast.error(`${name} is already your friend...`);
     } else {
       dispatch(addContact({
@@ -82,7 +81,7 @@ const ContactForm = () => {
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
         />
-        <button type="submit">Add contact</button>
+        <button type="submit">➕ Add contact</button>
         <br />
       </form>
     </div>

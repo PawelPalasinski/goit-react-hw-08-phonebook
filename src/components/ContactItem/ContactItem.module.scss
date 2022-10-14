@@ -1,10 +1,12 @@
 .contactItem {
-      width: 300px;
+      max-width: 350px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       & p {
+        min-width: 250px;
         line-height: 0;
+        font-weight: 400;
         & span {
           font-weight: 700;
         }
