@@ -13,7 +13,7 @@ export const RegisterForm = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-dispatch(register({ name, email, password }));
+    dispatch(register({ name, email, password }));
 
     form.reset();
   };
@@ -25,12 +25,13 @@ dispatch(register({ name, email, password }));
           Username
         </label>
         <input type="text" name="name" />
-
         <label className={styles.label} htmlFor="email">
           Email
         </label>
         <input type="email" name="email" />
-        <label className={styles.label} htmlFor='password'>Password</label>
+        <label className={styles.label} htmlFor="password">
+          Password
+        </label>
         <input type="password" name="password" />
         <button type="submit">Register</button>
       </form>
