@@ -37,7 +37,7 @@
 }
 
 .contactItem button:hover {
-  background-color: grey;
+  background-color: #6c63ff;
   color: whitesmoke;
 }
 /*# sourceMappingURL=ContactItem.module.css.map */

@@ -19,11 +19,13 @@ const ContactForm = () => {
     if (contacts.find(cont => cont.name === name)) {
       toast.error(`${name} is already your friend...`);
     } else {
-      dispatch(addContact({
-        id: nanoid(),
-        name,
-        number,
-      }));
+      dispatch(
+        addContact({
+          id: nanoid(),
+          name,
+          number,
+        })
+      );
       toast.success(`${name} is now on your Friends List`);
       form.reset();
     }
@@ -81,7 +83,8 @@ const ContactForm = () => {
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
         />
-        <button type="submit">➕ Add contact</button>
+
+        <button type="submit">Add contact</button>
         <br />
       </form>
     </div>

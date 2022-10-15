@@ -1,0 +1,12 @@
+.phonebookBox {
+  display: flex;
+  flex-direction: column;
+  & .contactskBox {
+    position: relative;
+    z-index: 3;
+  }
+  & .phonebookSvg {
+    max-width: 100vw;
+    margin-top: -500px;
+  }
+}

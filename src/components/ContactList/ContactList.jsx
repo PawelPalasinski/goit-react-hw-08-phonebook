@@ -2,7 +2,6 @@ import Spinner from '../Loader/Loader';
 import ContactItem from '../ContactItem/ContactItem';
 import Filter from '../Filter/Filter';
 import NoContactsMessage from '../NoContactsMessage/NoContactsMessage';
-
 import { useSelector } from 'react-redux';
 import {
   selectAllContacts,
@@ -23,7 +22,6 @@ const ContactList = () => {
   return (
     <div>
       {isLoading && <Spinner />}
-
       {contacts?.length > 0 ? (
         <div className={styles.contacts}>
           <Filter />

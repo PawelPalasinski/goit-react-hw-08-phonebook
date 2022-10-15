@@ -4,10 +4,7 @@ import styles from './Loader.module.css';
 const Spinner = () => {
   return (
     <div className={styles.Loader}>
-          <InfinitySpin
-              color="#808080"
-              width={200}
-          />
+      <InfinitySpin color="#6c63ff" width={200} />
     </div>
   );
 };

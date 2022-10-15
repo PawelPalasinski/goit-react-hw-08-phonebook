@@ -6,6 +6,7 @@ import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
+import Spinner from './Loader/Loader';
 
 
 const HomePage = lazy(() => import('../pages/Home/Home'));
@@ -22,7 +23,7 @@ const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <h1>Loading</h1>
+    <Spinner/>
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>

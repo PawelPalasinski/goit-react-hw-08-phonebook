@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CASvB;;AAXD,AAGE,aAHW,CAGT,aAAa,CAAC;EACd,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;CACX;;AANH,AAOE,aAPW,CAOT,aAAa,CAAC;EACd,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "Phonebook.module.scss"
+    ],
+    "names": [],
+    "file": "Phonebook.module.css"
+}
