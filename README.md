@@ -21,6 +21,8 @@
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)  
 
+### The illustrations used on this page are from [unDraw](https://undraw.co/illustrations).
+
 ## [<img src="https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png" title="netlify" alt="netlify" width="25" height="25"/> Page](https://pp-phonebook.netlify.app/)
 
 </div>
