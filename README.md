@@ -2,7 +2,7 @@
 
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&center=true&width=435&lines=Phonebook)](https://git.io/typing-svg)
 
-### A simple phone book application that allows you to register and store data (names and phone numbers). Application works with backend. 
+#### A simple phone book application that allows you to register and store data (names and phone numbers). Application works with backend. 
 
 
 ## Technologies
@@ -21,9 +21,9 @@
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)  
 
-### The illustrations used on this page are from [unDraw](https://undraw.co/illustrations).
+#### The illustrations used on this page are from [unDraw](https://undraw.co/illustrations).
 
-## [<img src="https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png" title="netlify" alt="netlify" width="25" height="25"/> Page](https://pp-phonebook.netlify.app/)
+## [<img src="https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png" title="netlify" alt="netlify" width="80"/>](https://pp-phonebook.netlify.app/)
 
 <img src="https://i.ibb.co/bdqrDST/phonebook1.jpg" alt="phonebook1" border="0">
 
