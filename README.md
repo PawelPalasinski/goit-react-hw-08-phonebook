@@ -2,7 +2,7 @@
 
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&center=true&width=435&lines=Phonebook)](https://git.io/typing-svg)
 
-#### A simple phone book application that allows you to register and store data (names and phone numbers). Application works with backend (The backend is currently unavailable).
+#### A simple phone book application that allows you to register and store data (names and phone numbers). Application works with backend.
 
 
 ## Technologies
